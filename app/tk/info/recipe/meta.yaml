@@ -1,0 +1,53 @@
+# This file created by conda-build 2.1.15
+# meta.yaml template originally from:
+# Origin b'https://github.intel.com/SAT/tk-recipe.git', commit b'4eb3e65c9e0e2739b77be7ed3eff1a7bf110b392'
+# ------------------------------------------------
+
+package:
+    name: tk
+    version: 8.6.4
+source:
+    git_rev: develop
+    git_url: C:\TCAgent1\work\219fbaff49f43d7d\tk-recipe\https:\github.intel.com\SAT\tk
+    patches:
+        - intel_use_built_tcl_libs.patch
+build:
+    features:
+        - vc14
+        - intel
+    noarch: ''
+    noarch_python: false
+    number: '26'
+    string: vc14_intel_26
+requirements:
+    build:
+        - curl 7.52.1 vc14_0
+        - vc 14.0 2
+        - vs2015_runtime 14.0.25420 intel_0
+        - zlib 1.2.11 vc14_intel_3
+        - tcl 8.6.4 vc14_intel_19
+        - intelpython 2018.0.2 0
+        - 7za 920 0
+    run:
+        - intelpython
+        - vc 14.0
+about:
+    description: 'Tcl (Tool Command Language) is a very powerful but easy to learn
+        dynamic
+
+        programming language, suitable for a very wide range of uses, including
+
+        web and desktop applications, networking, administration, testing and many
+
+        more.
+
+        '
+    dev_url: http://core.tcl.tk/
+    doc_url: http://www.tcl.tk/doc/
+    home: http://www.tcl.tk/
+    license: BSD-like
+    license_family: BSD
+    license_file: license.terms
+    summary: Dynamic programming language with GUI elements
+extra:
+    final: true

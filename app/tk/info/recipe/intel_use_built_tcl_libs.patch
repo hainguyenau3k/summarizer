@@ -1,0 +1,24 @@
+diff --git a/win/rules.vc b/win/rules.vc
+index 4abfaaa..3a66ab9 100644
+--- a/win/rules.vc
++++ b/win/rules.vc
+@@ -582,7 +582,7 @@ TCLSH		= "$(_TCLDIR)\bin\tclsh$(TCL_VERSION)$(SUFX).exe"
+ !if !exist($(TCLSH))
+ TCLSH           = "$(_TCLDIR)\bin\tclsh$(TCL_VERSION)$(SUFX:x=).exe"
+ !endif
+-TCLSTUBLIB	= "$(_TCLDIR)\lib\tclstub$(TCL_VERSION).lib"
++TCLSTUBLIB	= "$(LIBRARY_LIB)\tclstub$(TCL_VERSION).lib"
+ TCLIMPLIB	= "$(_TCLDIR)\lib\tcl$(TCL_VERSION)$(SUFX).lib"
+ !if !exist($(TCLIMPLIB))
+ TCLIMPLIB	= "$(_TCLDIR)\lib\tcl$(TCL_VERSION)$(SUFX:x=).lib"
+@@ -598,8 +598,8 @@ TCLSH		= "$(_TCLDIR)\win\$(BUILDDIRTOP)\tclsh$(TCL_VERSION)$(SUFX).exe"
+ !if !exist($(TCLSH))
+ TCLSH		= "$(_TCLDIR)\win\$(BUILDDIRTOP)\tclsh$(TCL_VERSION)$(SUFX:x=).exe"
+ !endif
+-TCLSTUBLIB	= "$(_TCLDIR)\win\$(BUILDDIRTOP)\tclstub$(TCL_VERSION).lib"
+-TCLIMPLIB	= "$(_TCLDIR)\win\$(BUILDDIRTOP)\tcl$(TCL_VERSION)$(SUFX).lib"
++TCLSTUBLIB	= "$(LIBRARY_LIB)\tclstub$(TCL_VERSION).lib"
++TCLIMPLIB	= "$(LIBRARY_LIB)\tcl$(TCL_VERSION)$(SUFX).lib"
+ !if !exist($(TCLIMPLIB))
+ TCLIMPLIB	= "$(_TCLDIR)\win\$(BUILDDIRTOP)\tcl$(TCL_VERSION)$(SUFX:x=).lib"
+ !endif

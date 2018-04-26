@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "vc14_intel_27",
+  "build_number": 27,
+  "channel": "https://conda.anaconda.org/intel/win-64",
+  "constrains": [],
+  "depends": [
+    "intelpython",
+    "vc 14.0"
+  ],
+  "features": "vc14 intel",
+  "fn": "tk-8.6.4-vc14_intel_27.tar.bz2",
+  "license": "BSD-like",
+  "license_family": "BSD",
+  "md5": "4b0a555a50d919c73d7791529ff6a6e1",
+  "name": "tk",
+  "platform": "win32",
+  "size": 1347601,
+  "subdir": "win-64",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/intel/win-64/tk-8.6.4-vc14_intel_27.tar.bz2",
+  "version": "8.6.4"
+}
